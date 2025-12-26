@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="faqs-sec">
+            <div class="container">
+                <div class="faq-wrapper active">
+                    <div class="faq-title">
+                        <h3 class="faq-title-item"><span>01</span> Web Design</h3>
+                        <div class="faq-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M1.33325 14.6667L14.6666 1.33341M14.6666 1.33341L1.33325 1.33341M14.6666 1.33341L14.6666 14.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <dov class="faq-content">
+                        <div class="faq-richtext">
+                            <p>
+                                Focuses on the aesthetic and user experience of a website, creating visually appealing and intuitive layouts. It involves aspects like graphic design, typography, and color schemes to enhance user engagement.
+                            </p>
+                            <img src="./img/faqs-1.jpg" alt="faqs-1" class="faqs-img">
+                        </div>
+                    </dov>
+                </div>
+                <div class="faq-wrapper">
+                    <div class="faq-title">
+                        <h3 class="faq-title-item"><span>02</span>Web Development</h3>
+                        <div class="faq-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M1.33325 14.6667L14.6666 1.33341M14.6666 1.33341L1.33325 1.33341M14.6666 1.33341L14.6666 14.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <dov class="faq-content">
+                        <div class="faq-richtext">
+                            <p>
+                                Involves the coding and programming that makes a website functional and interactive. This includes front-end development (what users see) and back-end development (server, database, and application logic).
+                            </p>
+                            <img src="./img/faqs-2.jpg" alt="faqs-1" class="faqs-img">
+                        </div>
+                    </dov>
+                </div>
+                <div class="faq-wrapper">
+                    <div class="faq-title">
+                        <h3 class="faq-title-item"><span>03</span> Branding</h3>
+                        <div class="faq-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M1.33325 14.6667L14.6666 1.33341M14.6666 1.33341L1.33325 1.33341M14.6666 1.33341L14.6666 14.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <dov class="faq-content">
+                        <div class="faq-richtext">
+                            <p>
+                               The process of creating a unique identity for a company or product, encompassing its name, logo, messaging, and overall market perception. It aims to establish recognition and a positive emotional connection with the target audience.
+                            </p>
+                            <img src="./img/faqs-3.jpg" alt="faqs-1" class="faqs-img">
+                        </div>
+                    </dov>
+                </div>
+                <div class="faq-wrapper">
+                    <div class="faq-title">
+                        <h3 class="faq-title-item"><span>04</span> Web Design</h3>
+                        <div class="faq-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M1.33325 14.6667L14.6666 1.33341M14.6666 1.33341L1.33325 1.33341M14.6666 1.33341L14.6666 14.6667" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <dov class="faq-content">
+                        <div class="faq-richtext">
+                            <p>
+                            Encompasses the entire process of creating a new product, from conceptualization and research to prototyping and final execution. It focuses on solving user problems and enhancing the overall user experience and functionality of a product.
+                            </p>
+                            <img src="./img/faqs-4.jpg" alt="faqs-1" class="faqs-img">
+                        </div>
+                    </dov>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const faqs = document.querySelectorAll(".faq-wrapper");
+
+        faqs.forEach(faq => {
+            faq.addEventListener("click", () => {
+
+                // remove active from others
+                faqs.forEach(item => {
+                    if (item !== faq) {
+                        item.classList.remove("active");
+                    }
+                });
+
+                // toggle active on current
+                faq.classList.toggle("active");
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
