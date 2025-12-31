@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assests/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content-wrapper">
+                <div class="brand-logo">
+                    <img src="./assests/images/logos/brand-logo-fill.svg" alt="Logo">
+                </div>
+                <div class="header-content">
+                    <div class="header-item-wrapper">
+                        <div class="header-list-content">
+                            <ul class="list-wrapper">
+                                <li class="list-item"><a href="javascript:void(0)">Home</a></li>
+                                <li class="list-item"><a href="javascript:void(0)">Careers</a></li>
+                                <li class="list-item"><a href="javascript:void(0)">Blog</a></li>
+                                <li class="list-item"><a href="javascript:void(0)">About us</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-btn-group">
+                            <a href="javascript:void(0)" class="btn btn-primary">Login</a>
+                            <a href="javascript:void(0)" class="btn btn-secondary">Singh Up</a>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="menu-btn" >
+                    <span class="menu-line menu-line-1"></span>
+                    <span class="menu-line menu-line-2"></span>
+                    <span class="menu-line menu-line-3"></span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const headerList = document.querySelector(".header-content");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            headerList.classList.toggle("active");
+        });
+
+    
+
+
+    </script>
+</body>
+
+</html>
