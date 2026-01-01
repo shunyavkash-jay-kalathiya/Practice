@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="./assests/css/main.css">
 </head>
 
 <body>
-    <header>
+    <header id="siteHeader">
         <div class="container">
             <div class="header-content-wrapper">
                 <div class="brand-logo">
@@ -29,12 +30,12 @@
                             </ul>
                         </div>
                         <div class="header-btn-group">
-                            <a href="javascript:void(0)" class="btn btn-primary">Login</a>
-                            <a href="javascript:void(0)" class="btn btn-secondary">Singh Up</a>
-                        </div>                        
+                            <a href="javascript:void(0)" class="btn btn-secondary">Login</a>
+                            <a href="javascript:void(0)" class="btn  btn-primary">Sing Up</a>
+                        </div>
                     </div>
                 </div>
-                <div class="menu-btn" >
+                <div class="menu-btn">
                     <span class="menu-line menu-line-1"></span>
                     <span class="menu-line menu-line-2"></span>
                     <span class="menu-line menu-line-3"></span>
@@ -43,9 +44,166 @@
         </div>
         </div>
     </header>
+    <main>
+        <section class="hero-sec">
+            <div class="container">
+                <div class="hero-content-wrapper">
+                    <div class="hero-content">
+                        <h1 class="hero-hedding theme-text-color"><span>Studying</span> Online is now much easier</h1>
+                        <div class="hero-richtext richtext ">
+                            <p>Skilline is an interesting platform that will teach you in more an interactive way</p>
+                        </div>
+                        <div class="hero-btn-wrapper">
+                            <a href="javascript:void(0)" class="btn btn-primary">Join for free</a>
+                            <div class="hero-playBtn-wrapper">
+                                <a href="javascript:void(0)" class="hero-playBtn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                        <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                                <p class="playBtn-text">Watch how it works</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+                        <img src="./assests/images/section/header-pic.png" alt="Hero Imgae">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="logo-sec">
+            <div class="container">
+                <h3 class="logo-title">Trusted by 5,000+ Companies Worldwide</h3>
+                <div class="splide logo-sider">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <div class="logo-icon">
+                                        <img src="./assests/images/logos/google.png" alt="google">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <div class="logo-icon">
+                                        <img src="./assests/images/logos/airbnb.png" alt="google">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <div class="logo-icon">
+                                        <img src="./assests/images/logos/amazon.png" alt="google">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <div class="logo-icon">
+                                        <img src="./assests/images/logos/facebook.png" alt="google">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <div class="logo-icon">
+                                        <img src="./assests/images/logos/grab-logo.png" alt="google">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service-card-sec">
+            <div class="container">
+                <div class="service-card-header">
+                    <h2 class="service-card-hedding theme-text-color">All-In-One <span>Cloud Software.</span></h2>
+                    <div class="service-card-hedding-richtext">
+                        <p>Skilline is one powerful online software suite that combines all the tools needed to run a successful school or office.</p>
+                    </div>
+                </div>
+                <div class="service-card-wrappar">
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5H5.625ZM7.5 15a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 7.5 15Zm.75 2.25a.75.75 0 0 0 0 1.5H12a.75.75 0 0 0 0-1.5H8.25Z" clip-rule="evenodd" />
+                                <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">Online Billing,<br> Invoicing, & Contracts</h3>
+                        <div class="service-card-richtext">
+                            <p>Simple and secure control of your organization's financial and legal transactions. Send customized invoices and contracts</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g>
+                                    <rect width="4" height="6" x="11" y="3" rx="2" fill="currentColor" opacity="1" data-original="#000000" class=""></rect>
+                                    <rect width="4" height="6" x="33" y="3" rx="2" fill="currentColor" opacity="1" data-original="#000000" class=""></rect>
+                                    <path d="M4 18v23a4 4 0 0 0 4 4h32a4 4 0 0 0 4-4V18zm12 20a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2zm0-11a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2zm11 11a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2zm0-11a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2zm11 11a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2zm0-11a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2zM44 16v-6a4 4 0 0 0-4-4h-1v1c0 2.206-1.794 4-4 4s-4-1.794-4-4V6H17v1c0 2.206-1.794 4-4 4S9 9.206 9 7V6H8a4 4 0 0 0-4 4v6z" fill="currentColor" opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">Easy Scheduling & Attendance Tracking</h3>
+                        <div class="service-card-richtext">
+                            <p>Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                <g>
+                                    <path d="M438.09 273.32h-39.596c4.036 11.05 6.241 22.975 6.241 35.404v149.65c0 5.182-.902 10.156-2.543 14.782h65.461c24.453 0 44.346-19.894 44.346-44.346v-81.581c.001-40.753-33.155-73.909-73.909-73.909zM107.265 308.725c0-12.43 2.205-24.354 6.241-35.404H73.91c-40.754 0-73.91 33.156-73.91 73.91v81.581c0 24.452 19.893 44.346 44.346 44.346h65.462a44.144 44.144 0 0 1-2.543-14.783v-149.65zM301.261 234.815h-90.522c-40.754 0-73.91 33.156-73.91 73.91v149.65c0 8.163 6.618 14.782 14.782 14.782h208.778c8.164 0 14.782-6.618 14.782-14.782v-149.65c0-40.754-33.156-73.91-73.91-73.91zM256 38.84c-49.012 0-88.886 39.874-88.886 88.887 0 33.245 18.349 62.28 45.447 77.524 12.853 7.23 27.671 11.362 43.439 11.362s30.586-4.132 43.439-11.362c27.099-15.244 45.447-44.28 45.447-77.524 0-49.012-39.874-88.887-88.886-88.887zM99.918 121.689c-36.655 0-66.475 29.82-66.475 66.475 0 36.655 29.82 66.475 66.475 66.475a66.095 66.095 0 0 0 26.195-5.388c13.906-5.987 25.372-16.585 32.467-29.86a66.05 66.05 0 0 0 7.813-31.227c0-36.654-29.82-66.475-66.475-66.475zM412.082 121.689c-36.655 0-66.475 29.82-66.475 66.475a66.045 66.045 0 0 0 7.813 31.227c7.095 13.276 18.561 23.874 32.467 29.86a66.095 66.095 0 0 0 26.195 5.388c36.655 0 66.475-29.82 66.475-66.475 0-36.655-29.82-66.475-66.475-66.475z" fill="currentColor" opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">Customer Tracking</h3>
+                        <div class="service-card-richtext">
+                            <p>Automate and track emails to individuals or groups. Skilline's built-in system helps organize your organization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card-two-col-sec">
+            <div class="container">
+                <div class="card-two-col-header">
+                    <h2 class="card-two-col-heading theme-text-color">What is <span>Skilline?</span></h2>
+                    <div class="card-two-col-richtext">
+                        <p>Skilline is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <h3>FOR INSTRUCTORS</h3>
+                            <a href="">Start a class today</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
+        const header = document.getElementById("siteHeader");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 10) {
+                header.classList.add("active");
+            } else {
+                header.classList.remove("active");
+            }
+        });
+
+
         const menuBtn = document.querySelector(".menu-btn");
         const headerList = document.querySelector(".header-content");
 
@@ -54,8 +212,40 @@
             headerList.classList.toggle("active");
         });
 
-    
+        const splide = new Splide('.splide.logo-sider', {
+            arrows: false,
+            pagination: false,
+            perPage: 8,
+            gap: "30px",
+            type: 'slide',
+            drag: false,
+            breakpoints: {
+                1024: {
+                    type: 'loop',
+                    drag: 'free',
+                    focus: 'center',
+                    perPage: 8,
+                    autoScroll: {
+                        speed: 1,
+                        pauseOnHover: false,   // 🔥 hover par stop nahi hoga
+                        pauseOnFocus: false   // (optional) focus par bhi stop nahi hoga
+                    },
 
+                },
+                768: {
+                    gap: "20px",
+                    perPage: 3,
+                },
+            },
+
+        }).mount(window.splide.Extensions);
+        window.addEventListener('resize', splide);
+        splide.mount();
+        if (window.innerWidth <= 1024) {
+            splide.mount(window.splide.Extensions);
+        } else {
+            splide.mount(); // desktop → no auto scroll
+        }
 
     </script>
 </body>
