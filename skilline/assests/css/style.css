@@ -3,14 +3,15 @@ header {
   z-index: 9;
   display: block;
   top: 0;
-  padding-block: 40px;
+  padding-block: 50px;
   width: 100%;
   /* transition: background-color 0.5s ease-in-out; */
   transition: all 0.3s ease-in-out;
 }
 header.active {
   padding-block: 20px;
-  background-color: color-mix(in srgb, var(--bg-color-1) 90%, transparent);
+  background-color: var(--bg-color-1);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 13px 0px;
 }
 .brand-logo {
   max-width: 120px;
@@ -27,50 +28,58 @@ header.active {
 }
 .header-item-wrapper {
   display: flex;
-  gap: 40px;
+  gap: 64px;
   align-items: center;
 }
 
 .list-wrapper {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 60px;
   align-items: center;
 }
 .list-wrapper .list-item > a {
   text-decoration: none;
   transition: color 0.3s ease-in-out;
-  color: var(--black);
+  font-weight: 400;
+  color: #5f5c6d;
 }
 .list-wrapper .list-item > a:hover {
   color: var(--primary-100);
 }
 .header-btn-group {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 /* hero section */
 .hero-sec {
-  padding-top: 180px;
+  padding-top: var(--header-height);
   clip-path: ellipse(120% 100% at 50% 0%);
   /* border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px; */
   background-color: var(--bg-color-1);
 }
+
 .hero-content-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
+/* .hero-content {
+  width: 40%;
+}
+.hero-img {
+  width: 60%;
+} */
 .hero-hedding {
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
 .hero-richtext {
-  max-width: 420px;
+  max-width: 430px;
   margin-bottom: 20px;
 }
 .service-card-hedding-richtext {
@@ -93,8 +102,16 @@ header.active {
   display: flex;
   gap: 10px;
   align-items: center;
+  text-decoration: none;
 }
+
+.hero-playBtn-wrapper:hover .hero-playBtn {
+  background-color: var(--black);
+  color: var(--white);
+}
+
 .hero-playBtn {
+  transition: all 0.5s ease-in-out;
   background-color: var(--white);
   color: var(--secondary);
   border-radius: 50%;
@@ -102,24 +119,25 @@ header.active {
   justify-content: center;
   aspect-ratio: 1 / 1;
   align-items: center;
-  width: 50px;
+  width: 54px;
 }
 .hero-playBtn svg {
   width: 20px;
   aspect-ratio: 1;
 }
 .playBtn-text {
+  color: var(--black);
   line-height: 1.1;
 }
 
 /* logo-sec */
 .logo-sec {
-  padding-block: 50px;
+  padding-block: 112px;
 }
 .logo-title {
   margin-bottom: 20px;
   text-align: center;
-  color: var(--black);
+  color: #87879d;
   font-weight: 500;
 }
 .logo-icon-wrapper {
@@ -207,6 +225,7 @@ header.active {
 }
 .card-two-col-header {
   text-align: center;
+  margin-bottom: 50px;
 }
 .card-two-col-heading {
   margin-bottom: 20px;
@@ -221,8 +240,46 @@ header.active {
   font-weight: 400;
   opacity: 0.6;
 }
+
+.two-col-card-wrappar {
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.two-col-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 400px;
+  height: 100%;
+  border-radius: 20px;
+}
+.two-col-card-title {
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+.two-col-card-btn {
+  display: inline-block;
+  color: var(--white);
+  padding: 20px 40px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  border: 1px solid var(--white);
+}
+.two-col-card-btn:hover {
+  border-color: transparent;
+  background-color: color-mix(in srgb, var(--secondary) 60%, transparent);
+}
 @media only screen and (min-width: 1024px) {
-  .menu-btn {
+  .menu-btn-group {
     display: none;
   }
   .logo-sider .splide__list {
@@ -239,6 +296,9 @@ header.active {
   .service-card {
     padding: 40px 20px;
   }
+  .two-col-card-wrappar {
+    gap: 50px;
+  }
 }
 @media only screen and (max-width: 1023.99px) {
   header {
@@ -247,8 +307,8 @@ header.active {
 
   .header-content {
     position: absolute;
-    background-color: color-mix(in srgb, var(--white) 40%, transparent);
-    backdrop-filter: blur(50px);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    background-color: var(--white);
     top: 100%;
     left: 0;
     width: 100%;
@@ -256,7 +316,6 @@ header.active {
     flex-direction: column;
     display: grid;
     width: 100%;
-    justify-content: center;
     grid-template-rows: 0fr;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
@@ -269,12 +328,21 @@ header.active {
   }
 
   .header-btn-group {
+    display: none;
+  }
+  .menu-btn-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .header-btn-group {
     flex-wrap: wrap;
     justify-content: center;
-    overflow: hidden;
   }
-  .brand-logo img {
-    max-height: 72px;
+  .header-btn-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
   }
   .menu-btn {
     background-color: var(--primary-100);
@@ -287,6 +355,7 @@ header.active {
     cursor: pointer;
     justify-content: center;
   }
+
   .menu-line {
     display: inline-block;
     width: 17px;
@@ -294,6 +363,7 @@ header.active {
     background-color: var(--white);
     transition: all 0.3s ease-in-out;
   }
+
   .list-wrapper {
     flex-direction: column;
     gap: 20px;
@@ -325,6 +395,10 @@ header.active {
   .service-card-title {
     font-size: 24px;
   }
+  .two-col-card-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 767.99px) {
   .hero-sec {
@@ -337,10 +411,48 @@ header.active {
   .hero-btn-wrapper {
     flex-wrap: wrap;
   }
+  .md-w-full {
+    width: 100% !important;
+  }
+  .header-btn-group {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .header-btn-list {
+    display: none;
+  }
+  .service-card-sec {
+    padding-block: 60px;
+  }
   .service-card-wrappar {
     gap: 64px 30px;
     grid-template-columns: repeat(1, 1fr);
   }
+  .card-two-col-sec {
+    padding-block: 60px;
+  }
+  .card-two-col-header {
+    margin-bottom: 30px;
+  }
+  .card-two-col-heading {
+    margin-bottom: 10px;
+  }
+  .two-col-card-wrappar {
+    gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .two-col-card {
+    min-height: 300px;
+  }
 }
 @media only screen and (max-width: 575.99px) {
+  .two-col-card {
+    min-height: 260px;
+  }
 }

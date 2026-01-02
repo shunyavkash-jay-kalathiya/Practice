@@ -9,7 +9,7 @@ body {
 }
 
 :root {
-  --font: "Roboto", sans-serif;
+  --font: "Poppins", sans-serif;
   --header-height: 0px;
   --black: #000000;
   --white: #ffffff;
@@ -17,7 +17,7 @@ body {
   --primary-100: #f48c06;
   --secondary: #65daff;
   --bg-color-1: #fff3e4;
-  --h1-size: 50px;
+  --h1-size: 40px;
   --h2-size: 34px;
   --h3-size: 24px;
   --h4-size: 18px;
@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1440px;
   width: 100%;
   margin-inline: auto;
   padding-inline: 20px;
@@ -61,7 +61,7 @@ h5,
 }
 
 .btn {
-  padding: 14px 24px;
+  position: relative;
   text-decoration: none;
   width: fit-content;
   display: flex;
@@ -71,8 +71,12 @@ h5,
   border-radius: 30px;
   font-weight: 400;
   text-align: center;
+  min-width: 130px;
   transition: all 0.5s ease-in-out;
   white-space: nowrap;
+  overflow: hidden;
+  z-index: 1;
+  padding: 16px 32px;
 }
 
 .btn-primary {
@@ -80,9 +84,43 @@ h5,
   color: var(--white);
 }
 
-.btn-secondary {
-  background-color: var(--white);
+.btn-primary::after,
+.btn-secondary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary::after {
+  background-color: var(--secondary);
+}
+
+.btn-secondary::after {
+  background-color: var(--black);
+}
+
+.btn-primary:hover {
   color: var(--black);
+}
+
+.btn-primary:hover:after,
+.btn-secondary:hover:after {
+  transform: skewX(-45deg) scale(1.2, 1);
+}
+
+.btn-secondary {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: var(--white);
+  color: #7e7e7e;
+}
+.btn-secondary:hover {
+  color: var(--white);
 }
 
 .btn-outline {
@@ -94,7 +132,6 @@ h5,
 
 .theme-text-color {
   color: var(--primary);
-  font-weight: 700;
 }
 .theme-text-color span {
   color: var(--primary-100);
@@ -114,6 +151,10 @@ h5,
   }
 }
 @media only screen and (max-width: 767.99px) {
+  h3,
+  .h3 {
+    font-size: 20px;
+  }
   .xl-none {
     display: none;
   }
@@ -123,5 +164,8 @@ h5,
   h2,
   .h2 {
     font-size: 24px;
+  }
+  btn-secondary {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 24px;
   }
 }
