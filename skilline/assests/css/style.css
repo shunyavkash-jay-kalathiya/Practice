@@ -1,3 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 header {
   position: fixed;
   z-index: 9;
@@ -144,12 +150,17 @@ header.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 26px;
 }
+
+.logo-icon {
+  max-width: 100px;
+  height: 30px;
+}
 .logo-icon img {
-  max-width: 100%;
   width: 100%;
-  max-height: 30px;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -197,9 +208,10 @@ header.active {
   width: 66px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.service-card-icon svg {
+.service-card-icon img ,.service-card-icon svg {
+  height: auto;
   aspect-ratio: 1;
-  width: 30px;
+  width: 46%;
 }
 .service-card-title {
   color: var(--primary);
@@ -358,7 +370,7 @@ header.active {
 
   .menu-line {
     display: inline-block;
-    width: 17px;
+    width: 16px;
     height: 3px;
     background-color: var(--white);
     transition: all 0.3s ease-in-out;
@@ -384,7 +396,6 @@ header.active {
   }
 
   .hero-sec {
-    padding-top: 133px;
     clip-path: ellipse(174% 100% at 50% 0%);
   }
 
@@ -401,8 +412,13 @@ header.active {
   }
 }
 @media only screen and (max-width: 767.99px) {
+  .brand-logo {
+    max-width: 90px;
+  }
+  .menu-btn {
+    padding: 12px;
+  }
   .hero-sec {
-    padding-top: 120px;
     clip-path: ellipse(191% 100% at 50% 0%);
   }
   .hero-content-wrapper {
