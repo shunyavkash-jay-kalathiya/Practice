@@ -20,7 +20,7 @@ body {
   --richtext-color: #797979;
   --bg-color-1: #fff3e4;
   --h1-size: 40px;
-  --h2-size: 34px;
+  --h2-size: 30px;
   --h3-size: 24px;
   --h4-size: 18px;
   --h5-size: 16px;
@@ -70,7 +70,7 @@ h5,
   justify-content: center;
   align-items: center;
   line-height: 1;
-  border-radius: 30px;
+  border-radius: 50px;
   font-weight: 400;
   text-align: center;
   min-width: 130px;
@@ -78,9 +78,12 @@ h5,
   white-space: nowrap;
   overflow: hidden;
   z-index: 1;
-  padding: 16px 32px;
+  padding: 24px 32px;
 }
 
+.btn.header-btn {
+  padding: 16px 32px;
+}
 .btn-primary {
   background-color: var(--primary-100);
   color: var(--white);
@@ -108,8 +111,8 @@ h5,
   background-color: var(--black);
 }
 
-.footer-btn::after{
-  background-color: var(--white)
+.footer-btn::after {
+  background-color: var(--white);
 }
 
 .btn-primary:hover {
@@ -145,12 +148,21 @@ h5,
   color: var(--primary-100);
 }
 
-
-
 @media only screen and (max-width: 1023.99px) {
   .xxl-none {
     display: none;
   }
+
+  .btn {
+    padding: 18px 32px;
+  }
+  .hero-playBtn {
+    width: 54px;
+  }
+  .hero-playBtn svg {
+    width: 22px;
+  }
+
   h1,
   .h1 {
     font-size: 32px;
