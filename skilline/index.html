@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="./assests/css/main.css">
 </head>
 
@@ -239,27 +238,70 @@
                 <div class="two-col-3-wrapper">
                     <div class="two-col-3-content">
                         <h2 class="two-col-3-title theme-text-color ">
-                            <span>Tools</span> For Teachers <br>And Learners
+                            <span>Tools</span> For Teachers And Learners
                         </h2>
-                        <div class="two-col-3-rictext">
+                        <div class="two-col-3-richtext">
                             <p>Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can handout assignments in real-time for students to complete and submit.</p>
                         </div>
                     </div>
                     <div class="two-col-3-images-wrapper">
+                        <span class="two-col-3-images-dot-1"></span>
+                        <span class="two-col-3-images-dot-2"></span>
+                        <span class="two-col-3-images-dot-3"></span>
                         <div class="col-3-icon-1 col-3-img-icon-wrap-1">
                             <div class="col-3-img-icon-wrap-2">
                                 <img src="./assests/images/icon/Group 76 1.svg" alt="">
                             </div>
                         </div>
-                            <div class="col-3-icon-2 col-3-img-icon-wrap-1">
+                        <div class="col-3-icon-2 col-3-img-icon-wrap-1">
                             <div class="col-3-img-icon-wrap-2">
                                 <img src="./assests/images/icon/users-class 1 1.svg" alt="">
                             </div>
                         </div>
-                        <img class="two-col-3-images-main" src="./assests/images/section/skilline-img-05.png" alt="girl-with-books">
+                        <div class="two-col-3-images-main">
+                            <img src="./assests/images/section/skilline-img-05.png" alt="girl-with-books">
+                        </div>
                         <img class="two-col-3-images-back" src="./assests/images/section/dots.png" alt="girl-with-books">
                     </div>
 
+                </div>
+            </div>
+        </section>
+        <section class="two-column-4">
+            <div class="container">
+                <div class="two-col-4-wrapper">
+                    <div class="two-col-4-images-wrapper"> 
+                        <div class="two-col-4-info-card">
+                              <div class="two-col-4-card-back"> </div>
+                            <div class="col-4-icon-wrapper">
+                                <span class="col-4-icon-1 two-col-4-info-card-icon">
+                                    <img src="./assests/images/section/Group 90.svg" alt="">
+                                </span>
+                                <span class="col-4-icon-2 two-col-4-info-card-icon">
+                                    <img src="./assests/images/section/Group 85.svg" alt="">
+                                </span>
+                            </div>
+                            <div class="two-col-4-card-content">
+                                <span class="two-col-4-info-tag">Question 1</span>
+                                <h4 class="two-col-4-info-card-title">True or false? This play takes place in Italy</h4>
+                            </div>
+                            <img class="two-col-4-img" src="./assests/images/section/skilline-img-06.png" alt="">
+                            <div class="two-col-4-card-bottom">
+                                <div class="two-col-4-card-bottom-icon">
+                                    <img src="./assests/images/section/Group 86.svg" alt="">
+                                </div>
+                                <h6 class="two-col-4-card-bottom-title">Your answer was <br> sent successfully</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two-col-4-content">
+                        <h2 class="two-col-4-title theme-text-color ">
+                            Assessments,<br> <span>Quizzes</span>, Tests
+                        </h2>
+                        <div class="two-col-4-richtext">
+                            <p>Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the online gradebook.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -292,9 +334,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
@@ -334,35 +373,6 @@
             menuBtn.classList.toggle("active");
             headerList.classList.toggle("active");
         });
-
-        const splide = new Splide('.splide.logo-sider', {
-            arrows: false,
-            pagination: false,
-            perPage: 8,
-            gap: "30px",
-            type: 'slide',
-            drag: false,
-            breakpoints: {
-                1024: {
-                    type: 'loop',
-                    drag: 'free',
-                    focus: 'center',
-                    perPage: 8,
-                    autoScroll: {
-                        speed: 1,
-                        pauseOnHover: false,   // 🔥 hover par stop nahi hoga
-                        pauseOnFocus: false   // (optional) focus par bhi stop nahi hoga
-                    },
-
-                },
-                768: {
-                    gap: "20px",
-                    perPage: 3,
-                },
-            },
-
-        }).mount(window.splide.Extensions);
-
 
     </script>
 </body>
