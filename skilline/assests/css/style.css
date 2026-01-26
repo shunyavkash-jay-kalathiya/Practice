@@ -984,6 +984,7 @@ width: 60%;
 
 .two-col-5-wrapper {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
@@ -1013,7 +1014,7 @@ width: 60%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 50%;
   aspect-ratio: 1;
-  height: 100px;
+  height: 20.8%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1024,14 +1025,15 @@ width: 60%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 50%;
   aspect-ratio: 1;
-  height: 72px;
+  height: 72%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .col-5-img-icon-wrap-2 img {
-  max-width: 75px;
+  aspect-ratio: 1;
+  height: 100%;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1257,6 +1259,9 @@ width: 60%;
   }
   .two-col-4-card-bottom-icon {
     width: 18.4%;
+  }
+  .two-col-5-wrapper{
+    flex-direction: column;
   }
 }
 
