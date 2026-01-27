@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Content.No</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr class="table-row" table-row="1">
+                            <td>1</td>
+                            <td>Jay</td>
+                            <td>jay.k911@gmail.com</td>
+                            <td>7779999010</td>
+                        </tr>
+                        <tr class="table-row" table-row="3">
+                            <td>2</td>
+                            <td>Jayant</td>
+                            <td>Jayant.11@gmail.com</td>
+                            <td>6668888010</td>
+                        </tr>
+                        <tr class="table-row" table-row="4">
+                            <td>4</td>
+                            <td>Jogindar</td>
+                            <td>Jogindar.911@gmail.com</td>
+                            <td>2224444010</td>
+                        </tr>
+                        <tr class="table-row" table-row="5">
+                            <td>5</td>
+                            <td>Jogindar</td>
+                            <td>Jogindar.911@gmail.com</td>
+                            <td>2224444010</td>
+                        </tr>
+                        <tr class="table-row" table-row="6">
+                            <td>6</td>
+                            <td>Jogindar</td>
+                            <td>Jogindar.911@gmail.com</td>
+                            <td>2224444010</td>
+                        </tr>
+                        <tr class="table-row" table-row="7">
+                            <td>7</td>
+                            <td>Jogindar</td>
+                            <td>Jogindar.911@gmail.com</td>
+                            <td>2224444010</td>
+                        </tr>
+                        <tr class="table-row" table-row="8">
+                            <td>8</td>
+                            <td>Jogindar</td>
+                            <td>Jogindar.911@gmail.com</td>
+                            <td>2224444010</td>
+                        </tr>
+                        <tr class="table-row" table-row="9">
+                            <td>9</td>
+                            <td>Jogindar</td>
+                            <td>Jogindar.911@gmail.com</td>
+                            <td>2224444010</td>
+                        </tr>
+                        <tr class="table-row" table-row="10">
+                            <td>10</td>
+                            <td>Jogindar</td>
+                            <td>Jogindar.911@gmail.com</td>
+                            <td>2224444010</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="">
+                    <div class="show-page-btn">
+                        <span class="num-row">5</span>
+                        <span class="menu-text">
+                            per-page
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                <g>
+                                    <path fill="#000000" fill-rule="evenodd" d="M5.293 8.293a1 1 0 0 0 0 1.414l6 6a1 1 0 0 0 1.414 0l6-6a1 1 0 0 0-1.414-1.414L12 13.586 6.707 8.293a1 1 0 0 0-1.414 0z" clip-rule="evenodd" opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
+                        </span>
+                        <ul class="select-menu">
+                            <li class="select-menu-num" per-page="5">05 per-page</li>
+                            <li class="select-menu-num" per-page="10">10 per-page</li>
+                            <li class="select-menu-num" per-page="20">20 per-page</li>
+                            <li class="select-menu-num" per-page="30">30 per-page</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            //select btn
+            const pageBtn = document.querySelector(".show-page-btn");
+            const selecMenu = document.querySelector(".select-menu");
+            //show pages
+            const perPageRow = document.querySelectorAll(".table-row");
+            const selectMenuNum = document.querySelectorAll(".select-menu-num");
+
+            pageBtn.addEventListener("click", () => {
+                selecMenu.classList.toggle("active");
+            })
+
+            selectMenuNum.forEach(item => {
+                const item = item.getAttribute("per-page");
+                console.log()
+                item.addEventListener("click", () => {
+                    selectMenuNum.forEach(num => {
+                        for( let i = 1; i <= totalPages; i++){
+
+                        }
+                    })
+                })
+            })
+        });
+
+    </script>
+</body>
+
+</html>

@@ -378,10 +378,11 @@
             if (!header) return;
 
             const headerHeight = header.offsetHeight;
-            document.documentElement.style.setProperty(
+            document.querySelector("body").style.setProperty(
                 '--header-height',
                 `${headerHeight}px`
             );
+            console.log(headerHeight)
         }
         window.addEventListener('load', setHeaderHeight);
         window.addEventListener('resize', setHeaderHeight);
@@ -390,10 +391,12 @@
         const header = document.getElementById("siteHeader");
 
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 10) {
+            if (window.scrollY > 50) {
                 header.classList.add("active");
+
             } else {
                 header.classList.remove("active");
+
             }
 
         });

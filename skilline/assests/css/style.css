@@ -167,7 +167,7 @@ footer {
 }
 /* hero section */
 .hero-sec {
-  padding-top: calc(var(--header-height) + 100px);
+  padding-top: calc(var(--header-height) + 60px);
   clip-path: ellipse(120% 100% at 50% 0%);
   /* border-bottom-right-radius: 50px;
 border-bottom-left-radius: 50px; */
@@ -1260,7 +1260,7 @@ width: 60%;
   .two-col-4-card-bottom-icon {
     width: 18.4%;
   }
-  .two-col-5-wrapper{
+  .two-col-5-wrapper {
     flex-direction: column;
   }
 }
@@ -1273,6 +1273,7 @@ width: 60%;
     padding: 12px;
   }
   .hero-sec {
+    padding-top: calc(var(--header-height) + 40px);
     clip-path: ellipse(191% 100% at 50% 0%);
   }
   .hero-content-wrapper {

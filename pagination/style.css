@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  padding-inline: 20px;
+  margin-inline: auto;
+  max-width: 1340px;
+}
+
+span {
+  display: inline-block;
+}
+
+table,
+td,
+th {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+table {
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.show-page-btn {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-menu {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  display: none;
+  list-style: none;
+  padding-block: 10px;
+  background-color: #ffffff;
+  transform: translate(0px, -94%);
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 9;
+  transition: all 0.5s ease-in-out;
+}
+.select-menu.active {
+  display: block;
+}
+.select-menu::after {
+  content: " ";
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: -10px;
+  left: 28px;
+  background-color: #ffffff;
+  aspect-ratio: 1;
+  height: 20px;
+  z-index: -1;
+}
+
+.select-menu-num {
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 6px 18px;
+}
+.select-menu-num:hover {
+  background-color: rgba(0, 0, 0, 8%);
+}
+/* .select-menu .select-menu-num:not(:last-child) {
+  margin-bottom: 10px;
+} */
+
+.menu-text {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  color: #000000;
+}
+.menu-text svg {
+  display: inline-block;
+  aspect-ratio: 1;
+  height: auto;
+  width: 20px;
+}
